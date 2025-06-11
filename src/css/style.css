@@ -1,10 +1,16 @@
 @font-face {
+  /*
   font-family: "SpaceMono Nerd Font";
+  */
+  font-family: "DepartureMono Nerd Font";
   font-display: swap;
   src:
-    local("SpaceMono Nerd Font"),
+    local("DepartureMonoNerdFont"),
+    /*
     url(../fonts/SpaceMonoNF.woff2) format("woff2"),
     url(../fonts/SpaceMonoNF.woff) format("woff");
+    */
+    url(../fonts/DepartureMono/DepartureMonoNerdFont-Regular.otf) format("opentype");
 }
 
 :root {
@@ -35,7 +41,7 @@ body {
   display: flex;
   color: var(--text-color);
   font-family:
-    SpaceMono Nerd Font,
+    DepartureMono Nerd Font,
     monospace;
   justify-content: center;
   align-items: center;
@@ -83,7 +89,7 @@ body {
   }
 }
 
-#greeting {
+#greeting, #beenary {
   color: var(--accent-color-2);
   font-size: 2.5em;
   font-weight: 900;
@@ -111,7 +117,7 @@ body {
 #links {
   display: grid;
   grid-row-gap: 0.5em;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 ul {
@@ -128,10 +134,10 @@ a {
 
 a:hover {
   color: var(--hover-color);
-  font-style: italic;
+  /*font-style: italic;*/
 }
 
-.aura .urls:nth-child(even) {
+.aura .urls {
   padding-left: 1.5em;
 }
 
